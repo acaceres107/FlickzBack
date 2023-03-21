@@ -1,11 +1,16 @@
-[
+import 'dotenv/config.js'
+import '../../config/database.js'
+import { Movies } from '../Movies.js'
+import { ObjectId } from 'mongodb'
+
+let movies = [
     {
         "name": "A STAR IS BORN",
         "description": "Seasoned musician Jackson Maine discovers -- and falls in love with -- struggling artist Ally. She has just about given up on her dream to make it big as a singer until Jackson coaxes her into the spotlight. But even as Ally's career takes off, the personal side of their relationship is breaking down, as Jackson fights an ongoing battle with his own internal demons.",
         "date": "19-2-2019",
         "web_site": "HBO max",
         "photo": "https://m.media-amazon.com/images/M/MV5BNmE5ZmE3OGItNTdlNC00YmMxLWEzNjctYzAwOGQ5ODg0OTI0XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
-        "category_id": "Romance",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89da'),
         "tomato": 80,
         "duration": "2h 15m" 
     },{
@@ -14,25 +19,25 @@
         "date": "11-2-2011",
         "web_site": "HBO max",
         "photo": "https://m.media-amazon.com/images/I/7111yBmWE+L._AC_SL1304_.jpg",
-        "category_id": "Romance",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89da'),
         "tomato": 59 ,
         "duration": "1h 57m" 
     },{
         "name": "FRIENDS WITH BENEFITS",
-        "description": "Jamie (Mila Kunis) is a New York-based executive recruiter who entices Dylan (Justin Timberlake), an art director from Los Angeles, to take a job at the New York office of GQ magazine. Finding that they have much in common, the two become fast friends. Feeling jaded by a number of broken romances, Dylan and Jamie decide that they are ready to quit looking for true love and focus on having fun. However, complications unfold when the two best pals add sex to their relationship.",
+        "description": "Jamie (Mila Kunis) is a New York-based executive recruiter who entices Dylan (Justin Timberlake), an art director from Los Angeles, to take a job at the New York office of GQ magazine. Finding that they have much in common, the two become fast friends. Feeling jaded by a number of broken 6419c3ec2358f31419ad89das, Dylan and Jamie decide that they are ready to quit looking for true love and focus on having fun. However, complications unfold when the two best pals add sex to their relationship.",
         "date": "22-10-2011",
         "web_site": "HBO max",
         "photo": "https://m.media-amazon.com/images/I/71TEDOX+wIL._AC_SY679_.jpg",
-        "category_id": "Romance",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89da'),
         "tomato": 65 ,
         "duration": "1h 49m" 
     },{
         "name": "TWILIGHT",
-        "description": "High-school student Bella Swan (Kristen Stewart), always a bit of a misfit, doesn't expect life to change much when she moves from sunny Arizona to rainy Washington state. Then she meets Edward Cullen (Robert Pattinson), a handsome but mysterious teen whose eyes seem to peer directly into her soul. Edward is a vampire whose family does not drink blood, and Bella, far from being frightened, enters into a dangerous romance with her immortal soulmate.",
+        "description": "High-school student Bella Swan (Kristen Stewart), always a bit of a misfit, doesn't expect life to change much when she moves from sunny Arizona to rainy Washington state. Then she meets Edward Cullen (Robert Pattinson), a handsome but mysterious teen whose eyes seem to peer directly into her soul. Edward is a vampire whose family does not drink blood, and Bella, far from being frightened, enters into a dangerous 6419c3ec2358f31419ad89da with her immortal soulmate.",
         "date": "21-11-2008",
         "web_site": "Netflix",
         "photo": "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/c6e9ff2a95d2896b69a4b66bb592f82778bdd0ee63f34ad04948c081f5de0d72._RI_V_TTW_.jpg",
-        "category_id": "Romance",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89da'),
         "tomato": 72 ,
         "duration": "2h 2m" 
     },{
@@ -41,7 +46,7 @@
         "date": "2018-08-17",
         "web_site": "Netflix",
         "photo": "https://m.media-amazon.com/images/M/MV5BMjQ3NjM5MTAzN15BMl5BanBnXkFtZTgwODQzMDAwNjM@._V1_.jpg",
-        "category_id": "Romance",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89da'),
         "tomato": 74,
         "duration": "1h 39m" 
       }
@@ -51,7 +56,7 @@
         "date": "2016-12-09",
         "site": "HBO max",
         "photo": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/91jrKX9xjQL.jpg",
-        "category_id": "Romance",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89da'),
         "tomato": 80,
         "duration": "2h 8m" 
       }
@@ -61,7 +66,7 @@
         "date": "2010-12-03",
         "site": "Star +",
         "photo": "https://m.media-amazon.com/images/M/MV5BNjQwM2Y3ODQtYjExMi00OGIwLWFhZWYtNDY0ZDM4ZTk1MzU1XkEyXkFqcGdeQXVyNjE5NTc2OTQ@._V1_.jpg",
-        "category_id": "Romance",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89da'),
         "tomato": 65,
         "duration": "1h 58m" 
       },
@@ -70,7 +75,7 @@
         "description": "A high school student is forced to confront her secret crush at a kissing booth.",
         "date": "2018-05-11",
         "web_site": "Netflix",
-        "category_id": "Romance",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89da'),
         "tomato": 23,
         "duration": "1h 45m",
         "photo": "https://m.media-amazon.com/images/M/MV5BNjQ0Mzk0OTE5MF5BMl5BanBnXkFtZTgwNDkyOTI0NTM@._V1_.jpg"
@@ -80,7 +85,7 @@
         "description": "Childhood sweethearts reunite after 15 years and realize they still have feelings for each other.",
         "date": "2019-05-31",
         "web_site": "Netflix",
-        "category_id": "Romance",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89da'),
         "tomato": 89,
         "duration": "1h 42m",
         "photo": "https://m.media-amazon.com/images/M/MV5BMGM2NWFjYTctZjFiYy00YzIxLThhY2QtY2UxZTNmNjdjZTU0XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg"
@@ -90,7 +95,7 @@
         "date": "2013-07-19",
         "web_site": "Netflix",
         "photo": "https://www.themoviedb.org/t/p/original/rICumoFSRzn4tJeaLvuI0HeE53p.jpg",
-        "category_id": "Horror",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89db'),
         "tomato": 83,
         "duration": "1h 52m"
       },
@@ -100,7 +105,7 @@
         "date": "2018-04-06",
         "web_site": "Amazon Prime",
         "photo": "https://m.media-amazon.com/images/M/MV5BMjI0MDMzNTQ0M15BMl5BanBnXkFtZTgwMTM5NzM3NDM@._V1_.jpg",
-        "category_id": "Horror",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89db'),
         "tomato": 95,
         "duration": "1h 30m"
       },
@@ -110,7 +115,7 @@
         "date": "1973-12-26",
         "web_site": "HBO Max",
         "photo": "https://m.media-amazon.com/images/M/MV5BYWFlZGY2NDktY2ZjOS00ZWNkLTg0ZDAtZDY4MTM1ODU4ZjljXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_FMjpg_UX1000_.jpg",
-        "category_id": "Horror",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89db'),
         "tomato": 87,
         "duration": "2h 12m"
       },
@@ -120,7 +125,7 @@
         "date": "2014-05-22",
         "web_site": "Netflix",
         "photo": "https://m.media-amazon.com/images/M/MV5BMTk0NzMzODc2NF5BMl5BanBnXkFtZTgwOTYzNTM1MzE@._V1_.jpg",
-        "category_id": "Horror",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89db'),
         "tomato": 92,
         "duration": "1h 34m"
       },
@@ -130,7 +135,7 @@
         "date": "2017-08-9",
         "web_site": "HBO Max",
         "photo": "https://i.pinimg.com/originals/ac/03/a6/ac03a61c9f5f1214683b8919ba02ec1b.jpg",
-        "category_id": "Horror",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89db'),
         "tomato": 86,
         "duration": "2h 15m"
     },
@@ -140,7 +145,7 @@
         "date": "2018-6-8",
         "web_site": "Amazon Prime",
         "photo": "https://m.media-amazon.com/images/M/MV5BOTU5MDg3OGItZWQ1Ny00ZGVmLTg2YTUtMzBkYzQ1YWIwZjlhXkEyXkFqcGdeQXVyNTAzMTY4MDA@._V1_.jpg",
-        "category_id": "Horror",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89db'),
         "tomato": 89,
         "duration": "2h 7m"
     },
@@ -150,7 +155,7 @@
         "date": "2019-07-03",
         "web_site": "Amazon Prime",
         "photo": "https://proyectonaschy.files.wordpress.com/2019/06/midsommar-poster.jpg",
-        "category_id": "Horror",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89db'),
         "tomato": 83,
         "duration": "2h 27m"
     },{
@@ -159,7 +164,7 @@
         "date": "07-09-2020",
         "web_site": "Netflix",
         "photo": "https://cdn.cinematerial.com/p/297x/y1u0vmt0/my-octopus-teacher-south-african-movie-poster-md.jpg?v=1636456147",
-        "category_id": "Documentary",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89dc'),
         "tomato": 81,
         "duration": "1h 25m"
     },
@@ -169,7 +174,7 @@
         "date": "09-09-2020",
         "web_site": "Netflix",
         "photo": "https://m.media-amazon.com/images/M/MV5BZGVjYjEzNmItMzc0My00Y2UyLWFlZjEtNzY5YTE4YTg2OGJlXkEyXkFqcGdeQXVyMjc5NDYwNTU@._V1_.jpg",
-        "category_id": "Documentary",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89dc'),
         "tomato": 76,
         "duration": "1h 34m"
     },
@@ -179,7 +184,7 @@
         "date": "04-11-2016",
         "web_site": "Netflix",
         "photo": "https://m.media-amazon.com/images/M/MV5BNTY4OTQ3NDIwMF5BMl5BanBnXkFtZTgwOTk4MzkzMDI@._V1_.jpg",
-        "category_id": "Documentary",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89dc'),
         "tomato": 82,
         "duration": "1h 52m"
     },
@@ -189,7 +194,7 @@
         "date": "30-09-2020",
         "web_site": "Netflix",
         "photo": "https://m.media-amazon.com/images/M/MV5BZjNkOWZlMWYtYmU1Ny00M2ZlLTkzZWUtM2RkMjU0MjM5NmEwXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg",
-        "category_id": "Documentary",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89dc'),
         "tomato": 80,
         "duration": "1h 23m"
     },
@@ -199,7 +204,7 @@
         "date": "19/04/2020",
         "web_site": "Netflix",
         "photo": "https://www.themoviedb.org/t/p/original/oVf4xGGbDtwVHiKn8uTuSriY7PH.jpg",
-        "category_id": "Documentary",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89dc'),
         "tomato": 90,
         "duration": "9 episodes, 45-60 minutes each"
     }
@@ -209,7 +214,7 @@
         "date": "14-01-2019",
         "web_site": "Netflix",
         "photo": "https://pics.filmaffinity.com/Fyre-648384569-large.jpg",
-        "category_id": "Documentary",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89dc'),
         "tomato": 73,
         "duration": "1h 37m"
       },
@@ -219,7 +224,7 @@
         "date": "21-08-2019",
         "web_site": "Netflix",
         "photo": "https://pics.filmaffinity.com/American_Factory-977540552-large.jpg",
-        "category_id": "Documentary",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89dc'),
         "tomato": 96,
         "duration": "1h 50m"
       },
@@ -229,7 +234,7 @@
         "date": "25-03-2020",
         "web_site": "Netflix",
         "photo": "https://m.media-amazon.com/images/M/MV5BMTNlMDI3MGYtY2FmNy00ZDdmLTkzZDMtMDg1MWYyM2M4YzQxXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
-        "category_id": "Documentary",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89dc'),
         "tomato": 95,
         "duration": "1h 48m"
       },
@@ -239,7 +244,7 @@
         "date": "19-06-2020",
         "web_site": "Netflix",
         "photo": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/41vJ73KVoTL._AC_UF894,1000_QL80_.jpg",
-        "category_id": "Documentary",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89dc'),
         "tomato": 98,
         "duration": "1h 47m"
       },
@@ -249,7 +254,7 @@
         "date": "30-07-2021",
         "web_site":"Disney+",
         "photo": "https://www.themoviedb.org/t/p/original/9dKCd55IuTT5QRs989m9Qlb7d2B.jpg",
-        "category_id": "Action",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89dd'),
         "tomato": 88,
         "duration":"2h 7m"
     },
@@ -259,7 +264,7 @@
         "date": "02-07-2021",
         "web_site":"Amazon Prime",
         "photo": "https://www.themoviedb.org/t/p/original/34nDCQZwaEvsy4CFO5hkGRFDCVU.jpg",
-        "category_id": "Action",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89dd'),
         "tomato": 52,
         "duration": "2h 20m"
     },
@@ -269,7 +274,7 @@
         "date": "12-06-2009",
         "web_site":"Amazon Prime",
         "photo": "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/9317be16967906a7f92f03a2e91b5428ce5cc000d5c33bb7e444d1bdc08ccbaa._RI_V_TTW_.jpg",
-        "category_id": "Action",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89dd'),
         "tomato": 60,
         "duration": "1h 46m"
     },
@@ -279,7 +284,7 @@
         "date": "27-07-2018",
         "web_site":"Netflix",
         "photo":"https://upload.wikimedia.org/wikipedia/en/f/ff/MI_%E2%80%93_Fallout.jpg",
-        "category_id": "Action",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89dd'),
         "tomato": 97,
         "duration": "2h 28m"
     },
@@ -289,7 +294,7 @@
         "date": "21-09-2012",
         "web_site":"HBO max",
         "photo": "https://pics.filmaffinity.com/Dredd-134517825-large.jpg",
-        "category_id": "Action",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89dd'),
         "tomato": 72,
         "duration": "1h 36m"
     },
@@ -299,7 +304,7 @@
         "date": "22-05-2022",
         "web_site":"Star+",
         "photo":"https://pics.filmaffinity.com/Top_Gun_Maverick-537976462-large.jpg",
-        "category_id":"action",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89dd'),
         "tomato": 99,
         "duration": "2h 11m"
     },
@@ -309,7 +314,7 @@
         "date": "04-10-2019",
         "web_site":"HBO max",
         "photo": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
-        "category_id": "Action",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89dd'),
         "tomato": 88,
         "duration": "2h 2m"
     },
@@ -319,7 +324,7 @@
         "date": "10-07-2020",
         "web_site":"Netflix",
         "photo": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/cjr4NWURcVN3gW5FlHeabgBHLrY.jpg",
-        "category_id": "Action",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89dd'),
         "tomato": 70,
         "duration": "2h 5m"
     },
@@ -329,7 +334,7 @@
         "date": "10-10-2003",
         "web_site":"Amazon Prime",
         "photo": "https://es.web.img3.acsta.net/pictures/14/05/07/12/38/160972.jpg",
-        "category_id": "Action",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89dd'),
         "tomato": 85,
         "duration": "1h 51m"
     },
@@ -339,7 +344,7 @@
         "date": "11-06-2010",
         "web_site":"Amazon Prime",
         "photo": "https://m.media-amazon.com/images/I/5136mzH7uWL._AC_.jpg",
-        "category_id": "Action",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89dd'),
         "tomato": 47,
         "duration": "60m"
     },
@@ -349,7 +354,7 @@
         "date": "20-07-2001",
         "web_site":"Netflix",
         "photo": "https://m.media-amazon.com/images/M/MV5BMjlmZmI5MDctNDE2YS00YWE0LWE5ZWItZDBhYWQ0NTcxNWRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
-        "category_id": "animation",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89de'),
         "tomato": 97,
         "duration": "2h 5m"
     },
@@ -359,7 +364,7 @@
         "date": "16-04-1988",
         "web_site":"HBO max",
         "photo": "https://m.media-amazon.com/images/I/A10mcxetgHL.jpg",
-        "category_id": "animation",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89de'),
         "tomato": 94,
         "duration": "1h 26m"
     },
@@ -369,7 +374,7 @@
         "date": "26-08-2016",
         "web_site":"Amazon Prime",
         "photo": "https://m.media-amazon.com/images/I/71-WBN3FCBL._AC_SY879_.jpg",
-        "category_id": "animation",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89de'),
         "tomato": 97,
         "duration": "1h 52m"
     },
@@ -379,7 +384,7 @@
         "date": "12-07-1997",
         "web_site":"Netflix",
         "photo": "https://static.wikia.nocookie.net/studio-ghibli/images/c/c6/Princess_Mononoke.jpg/revision/latest?cb=20220409212252",
-        "category_id": "animation",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89de'),
         "tomato": 93,
         "duration": "2h 13m"
     },
@@ -389,7 +394,7 @@
         "date": "16-07-1988",
         "web_site":"Netflix",
         "photo": "https://m.media-amazon.com/images/I/913iYTmWPwL.jpg",
-        "category_id": "animation",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89de'),
         "tomato": 90,
         "duration": "2h 4m"
     },
@@ -399,7 +404,7 @@
         "date": "29-07-1989",
         "web_site":"Netflix",
         "photo": "https://m.media-amazon.com/images/I/71X9gLpKc1L._AC_SL1500_.jpg",
-        "category_id": "animation",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89de'),
         "tomato": 96,
         "duration": "1h 42m"
     },
@@ -409,7 +414,7 @@
         "date": "05-03-2021",
         "web_site":"Disney+",
         "photo": "https://m.media-amazon.com/images/I/714pWGiJn1L._AC_SL1000_.jpg",
-        "category_id": "animation",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89de'),
         "tomato": 94,
         "duration": "1h 47m"
     },
@@ -419,7 +424,7 @@
         "date": "07-02-2014",
         "web_site":"Amazon Prime",
         "photo": "https://m.media-amazon.com/images/M/MV5BMTg4MDk1ODExN15BMl5BanBnXkFtZTgwNzIyNjg3MDE@._V1_.jpg",
-        "category_id": "animation",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89de'),
         "tomato": 85,
         "duration": "1h 40m"
     },
@@ -429,7 +434,7 @@
         "date": "18-06-2015",
         "web_site": "Disney+",
         "photo": "https://lumiere-a.akamaihd.net/v1/images/p_insideout_19751_af12286c.jpeg",
-        "category_id": "animation",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89de'),
         "tomato": 88,
         "duration": "1h 35m"
     },
@@ -439,7 +444,7 @@
         "date": "17-09-2016",
         "web_site":"Netflix",
         "photo": "https://m.media-amazon.com/images/M/MV5BMjc3OTVhYzItYmY2ZS00YjNmLTk2MmMtNDI0NDBkNTEwMmY3XkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg",
-        "category_id": "animation",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89de'),
         "tomato": 95,
         "duration": "2h 9m"
     },
@@ -449,7 +454,7 @@
         "date": "24-11-1993",
         "web_site": "Disney+",
         "photo": "https://images.justwatch.com/poster/8722630/s592/mrs-doubtfire",
-        "category_id": "Comedy",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89df'),
         "tomato": 71,
         "duration": "2h 5m"
     },
@@ -459,7 +464,7 @@
         "date": "04-08-2006",
         "web_site": "Netflix",
         "photo": "https://m.media-amazon.com/images/I/91yzZRen9rL._RI_.jpg",
-        "category_id": "Comedy",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89df'),
         "tomato": 72,
         "duration": "1h 48m"
     },
@@ -469,7 +474,7 @@
         "date": "17-08-2007",
         "web_site": "Amazon Prime",
         "photo": "https://www.amazon.com/Superbad-Jonah-Hill/dp/B0010R08PO",
-        "category_id": "Comedy",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89df'),
         "tomato": 88,
         "duration": "1h 58m"
     },
@@ -479,7 +484,7 @@
         "date": "30-04-2004",
         "web_site": "Paramount+",
         "photo": "https://www.tvguide.com/a/img/catalog/provider/1/2/1-7235822187.jpg",
-        "category_id": "Comedy",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89df'),
         "tomato": 84,
         "duration": "1h 37m"
     },
@@ -489,7 +494,7 @@
         "date": "18-08-2006",
         "web_site": "Amazon Prime",
         "photo": "https://cdn.playpilot.tech/fc490ef83d4a11ed83ac0a58a9feac02/src/img?optimizer=image&quality=75&width=320&aspect_ratio=2%3A3",
-        "category_id": "Comedy",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89df'),
         "tomato": 91,
         "duration": "1h 42m"
     },
@@ -499,7 +504,7 @@
         "date": "05-06-2009",
         "web_site": "HBO Max",
         "photo": "https://m.media-amazon.com/images/I/91G9Qoi1ytL._RI_.jpg",
-        "category_id": "comedy",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89df'),
         "tomato": 78,
         "duration": "1h 40m"
     },
@@ -509,7 +514,7 @@
         "date": "22-10-2021",
         "web_site":"Disney+",
         "photo":"https://m.media-amazon.com/images/M/MV5BNmQxZTNiODYtNzBhYy00MzVlLWJlN2UtNTc4YWZjMDIwMmEzXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg",
-        "category_id":"comedy",
+        "category_id":new ObjectId('6419c3ec2358f31419ad89df'),
         "tomato": 88,
         "duration": "1h 48m"
     },
@@ -519,7 +524,7 @@
         "date": "03-11-2006",
         "web_site": "Amazon Prime",
         "photo": "https://m.media-amazon.com/images/I/711gE287JiL._RI_.jpg",
-        "category_id": "comedy",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89df'),
         "tomato": 91,
         "duration": "1h 24m"
     },
@@ -529,7 +534,7 @@
         "date": "05-03-2021",
         "web_site":"Amazon Prime",
         "photo":"https://images2.vudu.com/poster2/140064-338",
-        "category_id":"comedy",
+        "category_id":new ObjectId('6419c3ec2358f31419ad89df'),
         "tomato": 49,
         "duration": "1h 50m"
     },
@@ -539,7 +544,7 @@
         "date": "13-07-2018",
         "web_site": "Star+",
         "photo": "https://lumiere-a.akamaihd.net/v1/images/d_deadpool2_rebrand_poster_01_final_aff09686.png",
-        "category_id": "comedy",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89df'),
         "tomato": 99,
         "duration": "1h 33m"
     },
@@ -549,7 +554,7 @@
         "date": "08-12-2017",
         "web_site": "Disney+",
         "photo": "https://jdbyrne.files.wordpress.com/2018/01/shapeofwater.jpg?w=640",
-        "category_id": "drama",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89e0'),
         "tomato": 91,
         "duration": "2h 3m"
     },
@@ -559,7 +564,7 @@
         "date": "24-03-1972",
         "web_site": "Paramount+",
         "photo": "https://m.media-amazon.com/images/I/714ZOEiVNtL._RI_.jpg",
-        "category_id": "drama",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89e0'),
         "tomato": 98,
         "duration": "2h 58m"
     },
@@ -569,7 +574,7 @@
         "date": "05-06-1998",
         "web_site": "Netflix",
         "photo": "https://images.justwatch.com/poster/8724030/s592/el-show-de-truman",
-        "category_id": "drama",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89e0'),
         "tomato": 95,
         "duration": "1h 43m"
     },
@@ -579,7 +584,7 @@
         "date": "30-11-1993",
         "web_site": "Netflix",
         "photo": "https://m.media-amazon.com/images/M/MV5BNDE4OTMxMTctNmRhYy00NWE2LTg3YzItYTk3M2UwOTU5Njg4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
-        "category_id": "drama",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89e0'),
         "tomato": 97,
         "duration": "3h 15m"
     },
@@ -589,7 +594,7 @@
         "date": "14-10-1994",
         "web_site": "HBO Max",
         "photo": "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/9964546b0ba1f6e14a6045e34b341f8ca2a3569752c5afed95b89682fcde1a68._RI_V_TTW_.jpg",
-        "category_id": "drama",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89e0'),
         "tomato": 91,
         "duration": "2h 22m"
     },
@@ -599,7 +604,7 @@
         "date": "08-11-2013",
         "web_site": "HBO Max",
         "photo": "https://m.media-amazon.com/images/I/51idlN9hsCL._AC_UF350,350_QL50_.jpg",
-        "category_id": "drama",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89e0'),
         "tomato": 95,
         "duration": "2h 14m"
     },
@@ -609,7 +614,7 @@
         "date": "27-09-2002",
         "web_site": "Netflix",
         "photo": "https://m.media-amazon.com/images/I/51NwgyZA8nL._RI_.jpg",
-        "category_id": "drama",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89e0'),
         "tomato": 95,
         "duration": "2h 30m"
     },
@@ -619,7 +624,7 @@
         "date": "28-03-2014",
         "web_site": "Amazon Prime",
         "photo": "https://images.sr.roku.com/idType/roku/context/global/id/623989026ff857249f43ff223bfa8759/images/gracenote/assets/p9957455_v_v8_am.jpg/magic/396x0/filters:quality(70)",
-        "category_id": "drama",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89e0'),
         "tomato": 72,
         "duration": "2h 18m"
     },
@@ -629,7 +634,7 @@
         "date": "08-01-2016",
         "web_site": "HBO Max",
         "photo": "https://m.media-amazon.com/images/I/A1SPwRWPZtL._RI_.jpg",
-        "category_id": "drama",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89e0'),
         "tomato": 78,
         "duration": "2h 36m"
     },
@@ -639,7 +644,9 @@
         "date": "10-12-1999",
         "web_site": "Amazon Prime",
         "photo": "https://m.media-amazon.com/images/I/815sDh2PH5L._RI_.jpg",
-        "category_id": "drama",
+        "category_id": new ObjectId('6419c3ec2358f31419ad89e0'),
         "tomato": 85,
         "duration": "3h 9m"
     }]
+
+Movies.insertMany(movies)
